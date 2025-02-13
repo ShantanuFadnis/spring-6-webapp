@@ -18,7 +18,6 @@ public class BookController {
     public String getBooks(Model model) {
 
         model.addAttribute("books", bookService.findAll());
-        // TODO: View books not yet implemented
         return "books";
     }
 }
